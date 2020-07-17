@@ -1,0 +1,28 @@
+<div class="app-body" style="margin-top: 150px;">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card-group">
+            <div class="card p-4">
+              <div class="card-body">
+                <form class="d-flex justify-content-center flex-column" [formGroup]="loginForm">
+                  <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" class="form-control" placeholder="User Name :eve.holt@reqres.in"
+                      formControlName="userName">
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password" formControlName="password">
+                  </div>
+                  <button type="button" class="btn btn-primary mx-auto" width="100px" (click)="submit()">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

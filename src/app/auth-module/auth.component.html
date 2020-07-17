@@ -1,0 +1,17 @@
+<app-navbar (openSidebar)="drawer.toggle()"></app-navbar>
+<mat-drawer-container class="example-container" autosize style="height: 87vh;">
+  <mat-drawer #drawer class="example-sidenav" mode="side" style=" z-index:2000">
+    <div class="navbar navbar-light bg-light">
+      <a class="navbar-brand mb-0 h1" routerLink="./">Home</a>
+    </div>
+    <div class="navbar navbar-light bg-light">
+      <a class="navbar-brand mb-0 h1" routerLink="countries">Countries</a>
+    </div>
+
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <div class="container-fluid" [style.margin-top.px]="80">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</mat-drawer-container>
